@@ -24,6 +24,8 @@ btn.addEventListener("click", function () {
       <td>${inputName.value}</td>
       <td>${inputTask.value}</td>`;
     tbody.append(contentTr);
+    inputName.value = "";
+    inputTask.value = "";
   } else {
     alert("Please file out the form");
   }
