@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+}
+
+.container {
+  width: 108rem;
+  margin: 0 auto;
+}
+
+.todo_list {
+  height: 100vh;
+}
+
+.todo-form {
+  background: rgba(88, 139, 139, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+
+.todo_list .forms {
+  display: grid;
+  grid-template-areas:
+    "i b"
+    "d d";
+  align-items: center;
+  gap: 2rem;
+}
+
+.todo_list .todo-form input {
+  font-size: 2rem;
+  color: #588b8b;
+  padding: 1.4rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(88, 139, 139, 0.2);
+}
+
+.todo_list .todo-form input:first-child {
+  grid-area: i;
+}
+.todo_list .todo-form input:last-child {
+  grid-area: b;
+}
+.todo_list .todo-form input:focus {
+  outline: 0;
+}
+
+.todo_list .todo-form button {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.4rem 2rem;
+  background: #588b8b;
+  border-radius: 1rem;
+  border: 1px solid rgba(88, 139, 139, 0.2);
+  outline: 0;
+  grid-area: d;
+}
+
+.todo-show {
+  background: rgba(88, 139, 139, 0.05);
+  border-radius: 1rem;
+  margin-top: 5rem;
+  overflow: hidden;
+  padding: 1.2rem;
+}
+
+.todo-header {
+  background: #588b8b;
+  padding: 3rem;
+}
+
+.todo-header h2 {
+  font-size: 4.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+.todo-list-items table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  font-size: 3rem;
+}
+
+.todo-list-items thead th {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.todo-list-items tbody tr td {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.todo-list-items tbody tr:nth-child(odd) {
+  border-collapse: collapse;
+  background: rgba(88, 139, 139, 0.05);
+  padding: 1rem;
+  border: 1px solid rgba(88, 139, 139, 0.3);
+}
+.todo-list-items tbody tr:last-child {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
