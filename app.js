@@ -18,9 +18,13 @@ const tbody = document.querySelector("tbody");
 
 // Action
 btn.addEventListener("click", function () {
-  const contentTr = document.createElement("tr");
-  contentTr.innerHTML = ` 
-    <td>${inputName.value}</td>
-    <td>${inputTask.value}</td>`;
-  tbody.append(contentTr);
+  if (inputName.value && inputTask.value) {
+    const contentTr = document.createElement("tr");
+    contentTr.innerHTML = ` 
+      <td>${inputName.value}</td>
+      <td>${inputTask.value}</td>`;
+    tbody.append(contentTr);
+  } else {
+    alert("Please file out the form");
+  }
 });
